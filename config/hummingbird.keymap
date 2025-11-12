@@ -76,6 +76,12 @@
             key-positions = <16 17 18>;
             bindings = <&kp LG(BSPC)>;
         };
+        
+        combo_f12 {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp F12>;
+        };
 
     };
 
@@ -95,7 +101,7 @@
             label = "Nav";
             bindings = <
                 &kp N1  &kp N2   &kp N3     &kp N4     &kp N5          &kp N6    &kp N7  &kp N8    &kp N9  &kp N0
-                &kp LBKT  &kp HOME &kp MINUS  &kp EQUAL  &KP END     &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &kp RBKT
+                &kp LBKT  &kp HOME &kp MINUS  &kp EQUAL  &kp END     &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &kp RBKT
                         &kp GRAVE  &kp SQT    &kp SEMI               &kp COLON  &kp SLASH  &kp BSLH
                                      &kp GRAVE  &kp SQT       &kp RSHIFT      &mo NUM_L
             >;
@@ -104,10 +110,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&hm LEFT_SHIFT COLON       &kp NUMBER_0        &kp NUMBER_1       &kp NUMBER_2  &bt BT_CLR    &bt BT_NXT       &kp NUMBER_3   &kp NUMBER_4     &kp NUMBER_5  &hm RSHIFT EQUAL
-            &kp SEMI  &hm LALT NUMBER_6  &hm LCTRL NUMBER_7  &hm LCMD NUMBER_8   &kp EQUAL    &bt BT_PRV  &hm RGUI NUMBER_9  &hm RALT PLUS  &hm RCTRL MINUS     &kp RS(MINUS)
-                                  &none               &none              &none                                        &none          &none            &none
-                                                                        &kp N0      &trans        &trans             &trans
+                &kp N1    &kp N2   &kp N3     &kp N4     &kp LG(LS(5))      &kp N6    &kp N7       &kp N8      &kp N9  &kp N0
+                &kp LBKT  &kp HOME &kp MINUS  &kp EQUAL  &kp LG(LS(4))     &kp LEFT  &kp DOWN     &kp UP      &kp RIGHT  &kp RBKT
+                         &kp GRAVE  &kp SQT    &kp SEMI                        &kp COLON    &kp SLASH   &kp BSLH
+                                     &kp GRAVE  &kp SQT       &kp RSHIFT      &mo NUM_L
             >;
         };
 
