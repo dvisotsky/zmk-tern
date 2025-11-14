@@ -114,17 +114,17 @@
             bindings = <
                 &kp N1  &kp N2   &kp N3     &kp N4     &kp N5          &kp N6    &kp N7  &kp N8    &kp N9  &kp N0
                 &kp LBKT  &kp HOME &kp MINUS  &kp EQUAL  &kp END     &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &kp RBKT
-                        &kp GRAVE  &kp SQT    &kp SEMI               &kp COLON  &kp SLASH  &kp BSLH
-                                     &kp GRAVE  &kp SQT       &kp RSHIFT      &mo NUM_L
+                                &kp GRAVE  &kp SQT    &kp SEMI               &kp COLON  &kp SLASH  &kp BSLH
+                                     &kp LSHIFT  &kp SQT        &mo NUM_L &kp RSHIFT
             >;
         };
 
         num_layer {
             label = "Num";
             bindings = <
-                &kp N1    &kp N2   &kp N3     &kp N4     &kp LG(LS(5))      &kp N6    &kp N7       &kp N8      &kp N9  &kp N0
-                &kp LBKT  &kp HOME &kp MINUS  &kp EQUAL  &kp LG(LS(4))     &kp LEFT  &kp DOWN     &kp UP      &kp RIGHT  &kp RBKT
-                         &kp GRAVE  &kp SQT    &kp SEMI                        &kp COLON    &kp SLASH   &kp BSLH
+                &kp N1    &kp N2   &kp N3     &kp N4     &kp LG(LS(N5))      &kp N6    &kp N7       &kp N8      &kp N9  &kp N0
+                &kp LBKT  &kp HOME &kp MINUS  &kp EQUAL  &kp LG(LS(N4))     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_PP
+                             &kp GRAVE  &kp SQT    &kp SEMI                        &kp COLON    &kp SLASH   &kp BSLH
                                      &kp GRAVE  &kp SQT       &kp RSHIFT      &mo NUM_L
             >;
         };
