@@ -88,13 +88,13 @@
             timeout-ms = <COMBO>;
             key-positions = <12 21>;
             bindings = <&kp LBKT>;
-        }
+        };
 
         combo_rbkt {
             timeout-ms = <COMBO>;
             key-positions = <17 24>;
             bindings = <&kp LBKT>;
-        }
+        };
     };
 
     keymap {
