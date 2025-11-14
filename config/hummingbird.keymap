@@ -12,6 +12,7 @@
 #define NAV_L 1
 #define NUM_L 2
 #define SYM_L 3
+#define COMBO 50
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -25,7 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <225>;
+            tapping-term-ms = <225>;
             flavor = "tap-preferred";
             bindings =
                 <&kp>,
@@ -37,52 +38,63 @@
         compatible = "zmk,combos";
 
         combo_b {
-            timeout-ms = <50>;
-            key-positions = <22 14>;
+            timeout-ms = <COMBO>;
+            key-positions = <22 13>;
             bindings = <&kp B>;
         };
         combo_m {
-            timeout-ms = <50>;
-            key-positions = <23 15>;
+            timeout-ms = <COMBO>;
+            key-positions = <23 16>;
             bindings = <&kp M>;
         };
 
         combo_z {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <0 10>;
             bindings = <&kp Z>;
         };
 
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <12 13>;
             bindings = <&kp TAB>;
         };
         
         combo_backspace {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <16 17>;
             bindings = <&kp BSPC>;
         };
         
         combo_del {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <17 18>;
         bindings = <&kp DEL>;
         };
 
         combo_del_word {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <16 17 18>;
             bindings = <&kp LG(BSPC)>;
         };
         
         combo_f12 {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO>;
             key-positions = <7 8>;
             bindings = <&kp F12>;
         };
+        
+        combo_lbkt {
+            timeout-ms = <COMBO>;
+            key-positions = <12 21>;
+            bindings = <&kp LBKT>;
+        }
 
+        combo_rbkt {
+            timeout-ms = <COMBO>;
+            key-positions = <17 24>;
+            bindings = <&kp LBKT>;
+        }
     };
 
     keymap {
