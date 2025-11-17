@@ -75,7 +75,7 @@
         combo_del_word {
             timeout-ms = <COMBO>;
             key-positions = <16 17 18>;
-            bindings = <&kp LG(BSPC)>;
+            bindings = <&kp LA(LC(BSPC))>;
         };
         
         combo_f12 {
@@ -93,7 +93,7 @@
         combo_rbkt {
             timeout-ms = <COMBO>;
             key-positions = <17 24>;
-            bindings = <&kp LBKT>;
+            bindings = <&kp RBKT>;
         };
     };
 
